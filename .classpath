@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="com.google.appengine.eclipse.core.GAE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/KaranJeet/Downloads/appengine-gcs-client-0.4.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/KaranJeet/Downloads/appengine-gcs-client-master.zip"/>
+	<classpathentry kind="lib" path="C:/Users/KaranJeet/Downloads/google-api-services-storage-v1beta2-rev63-java-1.19.0.zip"/>
+	<classpathentry kind="lib" path="C:/Users/KaranJeet/Downloads/google-http-client-assembly-1.18.0-rc-1.18.0-rc.zip"/>
+	<classpathentry kind="lib" path="C:/Users/KaranJeet/Downloads/guava-18.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/KaranJeet/Desktop/commons-fileupload-1.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/KaranJeet/Downloads/commons-io-2.4-bin/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/KaranJeet/Downloads/commons-io-2.4-bin/commons-io-2.4-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/KaranJeet/Downloads/commons-io-2.4-bin/commons-io-2.4-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/KaranJeet/Downloads/commons-io-2.4-bin/commons-io-2.4-tests.jar"/>
+	<classpathentry kind="lib" path="C:/Users/KaranJeet/Downloads/commons-io-2.4-bin/commons-io-2.4-test-sources.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.8.0_20">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/KaranJeet/Downloads/xstream-1.4.7.jar"/>
+	<classpathentry kind="output" path="war/WEB-INF/classes"/>
+</classpath>

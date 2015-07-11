@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+
+	<servlet>
+    <servlet-name>Upload</servlet-name>
+    <servlet-class>com.ksingh14.gae.gcs.Upload</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Serve</servlet-name>
+    <servlet-class>com.ksingh14.gae.gcs.Serve</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>ViewHash</servlet-name>
+    <servlet-class>com.ksingh14.gae.gcs.ViewHash</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UploadController</servlet-name>
+    <servlet-class>com.ksingh14.gae.gcs.UploadController</servlet-class>
+  </servlet>
+ 
+  <servlet-mapping>
+    <servlet-name>Upload</servlet-name>
+    <url-pattern>/upload</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>Serve</servlet-name>
+    <url-pattern>/serve</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+    <servlet-name>ViewHash</servlet-name>
+    <url-pattern>/viewHash</url-pattern>
+  </servlet-mapping>
+  
+   
+   <servlet-mapping>
+    <servlet-name>UploadController</servlet-name>
+    <url-pattern>/UploadController</url-pattern>
+  </servlet-mapping>
+  
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+	
+	  <security-constraint>
+    <web-resource-collection>
+      <url-pattern>/*</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>admin</role-name>
+    </auth-constraint>
+  </security-constraint>
+  
+	<context-param>
+		<param-name>tempfile.dir</param-name>
+		<param-value>tmpfiles</param-value>
+	</context-param>
+</web-app>
